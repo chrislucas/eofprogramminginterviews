@@ -39,8 +39,13 @@ def exponential_by_squaring(mat, e, mod):
 
 print(int(10E9) + 7)
 
-#print(exponential_by_squaring([[1, 1], [1, 0]], 10, int(10E9) + 7))
-print(exponential_by_squaring([[0, 1], [1, 1]], 10, int(10E9) + 7))
+matrices = [
+        [[1, 1], [1, 0]]
+    ,[[0, 1], [1, 1]]
+]
+
+print(exponential_by_squaring(matrices[0], 10, int(10E9) + 7))
+print(exponential_by_squaring(matrices[1], 10, int(10E9) + 7))
 
 if __name__ == '__main__':
     pass
